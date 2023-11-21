@@ -1,0 +1,186 @@
+* {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.img{
+    width: 100%;
+    height: 655px;
+    background-image: url(../image/background1.jpeg);
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+.all{
+    width: 100%;
+    height: 655px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.nav{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    width: 96%;
+    height: 93%;
+    background-image: url(../image/background1.jpeg);
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 40px rgba(116, 116, 116, 0.8);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.all .h1 {
+    color: rgb(255, 255, 255);
+    width: max-content;
+    line-height: 65px;
+    font-size: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0,0.7);
+    padding-left: 100px;
+}
+
+.wrapper .inputbox {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputbox input {
+    width: 410px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color: rgb(244, 245, 247,0);
+    border-bottom: 1px solid rgba(255, 255, 255);
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 45px 10px 20px;
+}
+
+.inputbox input::placeholder {
+    color: #fff;
+}
+
+
+form {
+    padding: 30px 40px;
+    background-color: rgba(244, 245, 247,0);
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.remember-forgot {
+    font-size: 13px;
+    width: 100%;
+}
+
+.remember-forgot nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.remember-forgot label {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.remember-forgot input{
+    background-color: transparent;
+    color: transparent;
+    width: 20px;
+    height: auto;
+    border: rgba(255, 255, 255,0.8);
+    border-radius: 2px;
+}
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+.remember-forgot a:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(6, 58, 228);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(50, 50, 51, 0.8);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+.options{
+    display: flex;
+    gap: 20px;
+}
+.options nav{
+    padding: 5px 20px;
+    border-left: 1px solid rgba(255, 255, 255,0.8);
+}
+.options a{
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.options a:hover{
+    opacity: 0.6;
+}
+@media screen and (max-width:550px) {
+    .wrapper{
+        padding-left: 0;
+    }
+    .all .h1{
+        font-size: 55px;
+    }
+    .inputbox input{
+        width: 300px;
+    }
+}
+@media screen and (max-width:400px) {
+    .inputbox input{
+        width: 250px;
+    }
+}

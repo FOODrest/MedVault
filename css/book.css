@@ -1,0 +1,99 @@
+
+.the_book{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to right, white 75%, #414B3B 25%);
+    overflow: hidden;
+}
+.the_book1{
+    background: linear-gradient(to right , rgba(0,0,0,0.2),rgba(0,0,0,0.1),rgba(0,0,0,0.05),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0.05),rgba(0,0,0,0.1),rgba(0,0,0,0.2));
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 100px 5%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; 
+}
+.description_of_book{
+    width: 48%;
+}
+.the_book1 h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.the_book1 p{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link_amazon a{
+    padding: 7px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: #284e11;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #414B3B;
+}
+.link_amazon a:hover{
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px #414B3B;
+}
+.the_cover{
+    width: 48%;
+    text-align: center;
+}
+.the_cover img{
+    margin: auto;
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+@media screen and (max-width:1000px) {
+    
+.the_book{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+}
+@media screen and (max-width:870px) {
+    
+    .the_book{
+        background: linear-gradient( white 75%, #fff 25%);
+    }
+    .the_book1 {
+        display: block;
+    }
+    .description_of_book{
+        width: 100%;
+    }
+    .the_cover{
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px) {
+    .the_book1 h1{
+        font-size: 40px;
+    }
+    .the_book1 p{
+        font-size: 18px;
+    }
+    .the_cover img{
+        height: 400px;
+    }
+}
+@media screen and (max-width:380px) {
+    .the_book1 h1{
+        font-size: 35px;
+    }.the_book1 p{
+        font-size: 17px;
+    }
+}

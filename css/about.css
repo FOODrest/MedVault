@@ -1,0 +1,133 @@
+body{
+    background-color: black;
+}
+.who_are_we{
+    width: 80%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+.who_are_we p{
+    color: rgba(255,255,255,0.7);
+    padding-bottom: 20px;
+}
+.who_are_we h3,.who_are_we2 h3, .members h3{
+    color: #4c75f2;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.who_are_we h1,.who_are_we2 h1{
+    color: #fff;
+    font-size: 23px;
+    line-height: 30px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    width: 80%;
+}
+.who {
+    width: 100%;
+    height: 700px;
+    background-image: url(../image/who.jpg);
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.who_are_we2{
+    width: 80%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.members{
+    width: 90%;
+    margin-left: 10%;
+}
+.members nav{
+    display: flex;
+    gap: 40px;
+}
+.sukanya{
+    width: 300px;
+    height: 400px;
+    background-image: url(../image/sokanya.png);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-position: center;
+    background-attachment: local ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.suka,.sdrb{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.suka:hover,.sdrb:hover{
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+.saad{
+    width: 300px;
+    height: 400px;
+    background-image: url(../image/saad.jpg);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-position: center;
+    background-attachment: local ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sukanya1,.saad1{
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: end;
+    position: absolute;
+    justify-content: center;
+    background: linear-gradient(to top,black,rgba(0,0,0,0.7),rgba(0,0,0,0.2),rgba(0,0,0,0),rgba(0,0,0,0));
+    top: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.sukanya1 h2 ,.saad1 h2{
+    color: #4c75f2;
+    padding-bottom: 5px;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.sukanya1 p ,.saad1 p{
+    padding-bottom: 10px;
+    width: 80%;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 500;
+}
+@media screen and (max-width:600px) {
+    .members{
+        width: auto;
+    }
+    .suka,.sdrb{
+        width: max-content;
+        margin-bottom: 40px;
+    }
+    .members nav{
+    display: block;
+    gap: 0;
+    }
+    .sukanya,.sukanya1,.saad,.saad1{
+        width: 230px;
+        height: 280px;
+    }
+    .who_are_we h1,.who_are_we2 h1{
+        font-size: 21px;
+        width: 100%;
+    }
+}

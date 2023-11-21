@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="ab">
+            <a href=""><img src="image/logo.png" alt="logo" title="logo"></a>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li><h2>/</h2>
+                    <li><a href="about.html" style="color: rgb(148, 148, 190);">About us</a></li><h2>/</h2>
+                    <li><a href="">Pricing</a></li><h2>/</h2>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_btn">&#9776;</div>
+        <div class="login">
+            <a href="login.html">LOGIN</a>
+        </div>
+    </header>
+    <div style="height: 250px;">
+    </div>
+    <nav class="who_are_we">
+        <p>
+            About us
+        </p>
+        <h3>
+            Who are we
+        </h3>
+        <h1>
+            We are a dynamic team of web developers at Smart Software Solutions who envisioned and brought to life this cutting-edge platform. Fueled by a passion for innovation and a commitment to revolutionizing healthcare, our team has crafted MedVault Pro to seamlessly integrate secure medical records, streamlined prescriptions, and advanced 3D health analysis. As developers, we stand at the forefront of health tech, dedicated to delivering a user-centric, efficient, and transformative healthcare experience.
+        </h1>
+    </nav>
+    <div class="who">
+    </div>
+    <nav class="who_are_we2">
+        <h3>
+            Our mission
+        </h3>
+        <h1>
+            At MedVault Pro, our mission is to revolutionise healthcare through innovative technology. We're committed to empowering healthcare professionals and individuals with a comprehensive platform integrating secure medical records, streamlined prescriptions, and advanced 3D health analysis. Join us in shaping the future of precision, security, and personalised well-being in healthcare.        </h1>
+    </nav>
+    <nav class="members">
+        <h3>
+            Our team
+        </h3>
+        <nav>
+            <div class="suka">
+                <div class="sukanya">
+                </div>
+                <div class="sukanya1">
+                    <div>
+                        <h2>
+                            Sukanya Rollinson
+                            
+                        </h2>
+                        <p>
+                            The founder of Smart Software Solutions
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sdrb">
+                <div class="saad">
+                
+                </div>
+                <div class="saad1">
+                    <div>
+                        <h2>
+                            Saad Rajeb
+                        </h2>
+                        <p>Developer at Smart Software Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <footer>
+        <nav class="footer">
+            <img src="image/logo.png" alt="">
+            <div>
+                <h2>Follow us</h2>
+            </div>
+            <div class="f_about">
+                <h2><b>Quick Links</b></h2><br>
+                <a href="">lorem1</a><br><br>
+                <a href="">lorem1</a><br><br>
+                <a href="">lorem1</a><br><br>
+                <a href="">lorem1</a><br><br>
+                <a href="">lorem1</a>
+            </div>
+            <div  class="f_links"><br>
+                <a href="">lorem1</a><br><br><br>
+                <a href="">lorem1</a><br><br><br>
+                <a href="">lorem1</a>
+            </div>
+        </nav>
+        <nav class="final">
+            <p>Read terms and conditions</p>
+            <p>Created by  <a href="https://smartsoftwaresolutions.ltd/"><b> Smart.Software.Solutions</b></a></p>
+            <p>All rights reserved.2023</p>
+        </nav>
+
+    </footer>
+    
+    
+    <script>
+        let menu_btn = document.querySelector('.menu_btn');
+        let menu = document.querySelector('.menu');
+        menu_btn.addEventListener('click', () => {
+            menu.classList.toggle('click');
+            menu_btn.classList.toggle('click');
+        });
+    </script>
+    <script>
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            header.classList.add('scrolled'); // Always add the class when scrolling starts
+            if (window.scrollY === 0) {
+                header.classList.remove('scrolled'); // Remove the class when scrolled back to the top
+            }
+        });
+    </script>
+</body>
+</html>
